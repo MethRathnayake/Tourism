@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Background image and overlay styling */
+    .hero-section {
+      background: url('pexels-asadphoto-457882.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 900px;
+    }
+    
+    .content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .popular-places {
+      margin-top: 2rem;
+    }
+
+    .place-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .place-card img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .place-card h5 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    .star-rating {
+      color: #f7b900;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .content h1 {
+        font-size: 2rem;
+      }
+
+      .place-card {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Travel Compnay</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Activity</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-3">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light ms-2" type="submit">🔍</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero-section">
+    <div class="content">
+      <h1>Explore Beyond Boundaries,<br>Travel Beyond Expectations</h1>
+      <p>We don't just plan trips, we craft unforgettable adventures.</p>
+      <button class="btn btn-light btn-lg">Popular Place</button>
+
+      <!-- Popular places -->
+      <div class="row popular-places mt-4">
+        <div class="col-md-4">
+          <div class="place-card">
+            <img src="1.avif" alt="Beach">
+            <h5 style="color: black;">Beach</h5>
+            <p class="star-rating">★★★★★</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="place-card">
+            <img src="2.jpg" alt="Mount">
+            <h5 style="color: black;">Mount</h5>
+            <p class="star-rating">★★★★★</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="place-card">
+            <img src="3.jpg" alt="Country">
+            <h5 style="color: black;">Country</h5>
+            <p class="star-rating">★★★★★</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JavaScript bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
