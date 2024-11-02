@@ -16,7 +16,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px;
     }
     
     .hero-section::before {
@@ -57,7 +56,6 @@
       padding: 1rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       text-align: center;
-      margin-bottom: 1rem;
     }
 
     .place-card img {
@@ -74,77 +72,13 @@
     }
 
     /* Responsive adjustments */
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       .content h1 {
         font-size: 2rem;
       }
 
-      .content p {
-        font-size: 1rem;
-      }
-
-      .hero-section {
-        padding-top: 100px;
-        height: auto;
-        text-align: center;
-      }
-
-      /* Stack popular places vertically on smaller screens */
-      .popular-places .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-    }
-
-    @media (max-width: 768px) {
-  /* Fix navbar dropdown from covering the entire page */
-  .navbar-collapse {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    max-height: calc(100vh - 70px);
-    overflow-y: auto;
-  }
-
-  .navbar-collapse.show {
-    display: block;
-  }
-
-  /* Set proportional width for search bar on smaller screens */
-  .navbar .form-control {
-    width: 70%; /* Adjust this as needed for better fit */
-    margin-top: 0.5rem;
-  }
-
-  /* Make search button more proportional */
-  .navbar .btn-outline-light {
-    width: auto;
-    padding: 0.4rem 0.8rem;
-    margin-top: 0.5rem;
-  }
-
-  /* Adjust button font size */
-  .btn.btn-light.btn-lg {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-}
-
-
-    @media (max-width: 576px) {
-      .content h1 {
-        font-size: 1.5rem;
-      }
-
-      .content p {
-        font-size: 0.9rem;
-      }
-      
-      /* Reduce padding for better fit on very small screens */
       .place-card {
-        padding: 0.5rem;
+        margin-bottom: 1rem;
       }
     }
   </style>
@@ -154,7 +88,7 @@
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Travel Beyond</a>
+      <a class="navbar-brand" href="#">Travel Compnay</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -218,4 +152,4 @@
   <!-- Bootstrap JavaScript bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>   
+</html>
